@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
 	selector: 'keeper',
@@ -9,5 +9,10 @@ export class KeeperComponent implements OnInit {
 
 	ngOnInit() {
 		console.log('keeper.component cargado!!');
+
+		$('#pId').hide();
+		$('#buttonId').click(function() {
+			$('#pId').slideToggle();
+		});
 	}
 }
