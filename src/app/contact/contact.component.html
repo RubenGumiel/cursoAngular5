@@ -1,4 +1,6 @@
-<h1>{{title}}</h1>
-
-<input type="text" [(ngModel)]="email">
-<button (click)="guardarEmail()">Guardar email</button>
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+    <button class="btn btn-outline-success my-2 my-sm-0" (click)="guardarEmail()">Guardar</button>
+  </form>
+</nav>
