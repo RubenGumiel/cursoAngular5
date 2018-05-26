@@ -13,7 +13,7 @@ const appRoutes : Routes = [
 	{path: 'animal', component: AnimalComponent},
 	{path: 'contact', component: ContactComponent},
 	{path: 'keeper', component: KeeperComponent},
-	{path: 'home', component: HomeComponent}
+	{path: 'home', component: HomeComponent},
 	{path: '**', component: HomeComponent}
 ];
 

@@ -9,5 +9,9 @@
 <a [routerLink]="['/animal']">Animals</a>
 <a [routerLink]="['/keeper']">Cuidadores</a>
 <a [routerLink]="['/contact']">Contacto</a>
+<span *ngIf="email">
+	Email de contacto: <strong>{{email}}</strong>
+	<button (click)="deleteEmail()">Eliminar email</button>
+</span>
 
 <router-outlet></router-outlet>
