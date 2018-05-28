@@ -11,6 +11,9 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { KeeperComponent } from './keeper/keeper.component';
 
+// importar nuestro propio modulo
+import { EmailModule } from './emailmodule/emailmodule.component';
+  
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { KeeperComponent } from './keeper/keeper.component';
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    EmailModule
   ],
   providers: [
     appRoutingProviders
